@@ -27,13 +27,13 @@ const upload = multer({
 router.get('/listendereco', listEnderecos);
 
 //Create category
-router.post('/endereco', createEndereco);
+router.post('/createendereco', createEndereco);
 
 //List products
 router.get('/listcidade', listCidade);
 
 //Create cidade
-router.post('/cidade', createCidade);
+router.post('/createcidade', createCidade);
 //Get products by category
 router.get('/endereco/:enderecoId/endereco', listCidadeByEndereco);
 
@@ -41,4 +41,4 @@ router.get('/endereco/:enderecoId/endereco', listCidadeByEndereco);
 router.get('/listbairro', listBairro);
 
 //Create orders
-router.post('/bairro', createBairro);
+router.post('/createbairro', createBairro);
